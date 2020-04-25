@@ -15,8 +15,8 @@ library(tidytext)
 # install.packages('tidytext')
 
 ### Data Reading
-proFilePath = "~/Desktop/workspace/indeed/Job-Satisfaction/data/prepx/pro_doc_sampled_6.csv"
-conFilePath = "~/Desktop/workspace/indeed/Job-Satisfaction/data/prepx/con_doc_sampled_6.csv"
+proFilePath = "~/Desktop/dm_project/data/prepx/pro_doc_sampled_6.csv"
+conFilePath = "~/Desktop/dm_project/data/prepx/con_doc_sampled_6.csv"
 proData <- read.csv(proFilePath) 
 conData <- read.csv(conFilePath)
 
@@ -92,11 +92,10 @@ save.image('~/Desktop/R_js/data/stm-pro_con.RData')
 
 
 ### Load the model
-load('~/Desktop/R_js/data/stm.RData') 
+load('~/Desktop/R_js/data/stm-pro_con.RData') 
 
 
 # Model Analysis
-
 model = modelCon20
 
 beta <- tidy(model) #prob that each word is generated from the topic

@@ -6,7 +6,7 @@ library(LDAvis)
 
 # Loading Data
 load('~/Desktop/R_js/data/stm-pro_con.RData')
-# load('~/Desktop/R_js/data/stm_dataviz.RData')
+
 
 #  Model Analysis
 num_topic = 17
